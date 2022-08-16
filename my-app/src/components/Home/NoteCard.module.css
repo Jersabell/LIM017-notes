@@ -1,0 +1,71 @@
+.noteCard {
+    width: 600px;
+    /* background-color: rgb(207, 137, 44); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid rgba(202, 200, 200, 0.699);
+    background-color: #ffd1ff9d;
+    border-radius: 15px;
+}
+
+.noteCard>form {
+    width: 600px;
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.noteCard>form>hr {
+    width: 100%;
+    line-height: 1em;
+    position: relative;
+    outline: 0;
+    border: 0;
+    color: black;
+    text-align: center;
+    height: 1.5em;
+    opacity: .5;
+}
+
+.noteCard>form>hr:before {
+    content: '';
+    background: linear-gradient(to right, transparent, #818078, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+
+.noteCard>form>hr:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+
+    padding: 0 .5em;
+    line-height: 1.5em;
+    color: #818078;
+    background-color: #fcfcfa;
+}
+
+.noteCard>form>input {
+    width: 100%;
+    border: none;
+    background-color: #ffd1ff00;
+
+    /* background-color: brown; */
+}
+
+.noteCard>form>input:focus {
+    outline: none;
+}
